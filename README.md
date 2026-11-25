@@ -1,5 +1,13 @@
 # React + Vite
 
+## Vercel services
+
+The root Vite app is deployed as the public `app` service and receives all
+paths through the catch-all rewrite in `vercel.json`. The separate Vite app
+under `oak-and-brush/` is deployed as the internal `oak-and-brush` service and
+does not receive public traffic. Neither app currently calls the other, so no
+service bindings are configured.
+
 This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
 
 Currently, two official plugins are available:
